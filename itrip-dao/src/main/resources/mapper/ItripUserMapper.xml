@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itrip.mapper.ItripUserMapper">
+  <resultMap id="BaseResultMap" type="cn.itrip.pojo.ItripUser">
+    <!--@mbg.generated-->
+    <!--@Table itrip_user-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_Code" jdbcType="VARCHAR" property="userCode" />
+    <result column="user_Password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_Type" jdbcType="INTEGER" property="userType" />
+    <result column="flat_ID" jdbcType="BIGINT" property="flatId" />
+    <result column="user_Name" jdbcType="VARCHAR" property="userName" />
+    <result column="we_Chat" jdbcType="VARCHAR" property="weChat" />
+    <result column="QQ" jdbcType="VARCHAR" property="qq" />
+    <result column="weibo" jdbcType="VARCHAR" property="weibo" />
+    <result column="baidu" jdbcType="VARCHAR" property="baidu" />
+    <result column="creation_Date" jdbcType="TIMESTAMP" property="creationDate" />
+    <result column="created_By" jdbcType="BIGINT" property="createdBy" />
+    <result column="modify_Date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="modified_By" jdbcType="BIGINT" property="modifiedBy" />
+    <result column="activated" jdbcType="INTEGER" property="activated" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_Code, user_Password, user_Type, flat_ID, user_Name, we_Chat, QQ, weibo, 
+    baidu, creation_Date, created_By, modify_Date, modified_By, activated
+  </sql>
+</mapper>

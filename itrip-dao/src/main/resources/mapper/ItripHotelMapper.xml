@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itrip.mapper.ItripHotelMapper">
+  <resultMap id="BaseResultMap" type="cn.itrip.pojo.ItripHotel">
+    <!--@mbg.generated-->
+    <!--@Table itrip_hotel-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="hotel_Name" jdbcType="VARCHAR" property="hotelName" />
+    <result column="country_Id" jdbcType="BIGINT" property="countryId" />
+    <result column="province_Id" jdbcType="BIGINT" property="provinceId" />
+    <result column="city_Id" jdbcType="BIGINT" property="cityId" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="details" jdbcType="LONGVARCHAR" property="details" />
+    <result column="facilities" jdbcType="LONGVARCHAR" property="facilities" />
+    <result column="hotel_Policy" jdbcType="LONGVARCHAR" property="hotelPolicy" />
+    <result column="hotel_Type" jdbcType="INTEGER" property="hotelType" />
+    <result column="hotel_Level" jdbcType="INTEGER" property="hotelLevel" />
+    <result column="is_GroupPurchase" jdbcType="INTEGER" property="isGrouppurchase" />
+    <result column="redundant_City_Name" jdbcType="VARCHAR" property="redundantCityName" />
+    <result column="redundant_Province_Name" jdbcType="VARCHAR" property="redundantProvinceName" />
+    <result column="redundant_Country_Name" jdbcType="VARCHAR" property="redundantCountryName" />
+    <result column="redundant_Hotel_Store" jdbcType="INTEGER" property="redundantHotelStore" />
+    <result column="creation_Date" jdbcType="TIMESTAMP" property="creationDate" />
+    <result column="created_By" jdbcType="BIGINT" property="createdBy" />
+    <result column="modify_Date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="modified_By" jdbcType="BIGINT" property="modifiedBy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, hotel_Name, country_Id, province_Id, city_Id, address, details, facilities, hotel_Policy, 
+    hotel_Type, hotel_Level, is_GroupPurchase, redundant_City_Name, redundant_Province_Name, 
+    redundant_Country_Name, redundant_Hotel_Store, creation_Date, created_By, modify_Date, 
+    modified_By
+  </sql>
+</mapper>

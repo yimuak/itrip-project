@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itrip.mapper.ItripAreaDicMapper">
+  <resultMap id="BaseResultMap" type="cn.itrip.pojo.ItripAreaDic">
+    <!--@mbg.generated-->
+    <!--@Table itrip_area_dic-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="area_No" jdbcType="VARCHAR" property="areaNo" />
+    <result column="parent" jdbcType="BIGINT" property="parent" />
+    <result column="is_Activated" jdbcType="INTEGER" property="isActivated" />
+    <result column="is_TradingArea" jdbcType="INTEGER" property="isTradingarea" />
+    <result column="is_Hot" jdbcType="INTEGER" property="isHot" />
+    <result column="level" jdbcType="INTEGER" property="level" />
+    <result column="is_China" jdbcType="INTEGER" property="isChina" />
+    <result column="pinyin" jdbcType="VARCHAR" property="pinyin" />
+    <result column="creation_Date" jdbcType="TIMESTAMP" property="creationDate" />
+    <result column="created_By" jdbcType="BIGINT" property="createdBy" />
+    <result column="modify_Date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="modified_By" jdbcType="BIGINT" property="modifiedBy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, area_No, parent, is_Activated, is_TradingArea, is_Hot, `level`, is_China, 
+    pinyin, creation_Date, created_By, modify_Date, modified_By
+  </sql>
+</mapper>

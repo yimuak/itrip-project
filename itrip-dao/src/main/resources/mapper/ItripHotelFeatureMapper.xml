@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itrip.mapper.ItripHotelFeatureMapper">
+  <resultMap id="BaseResultMap" type="cn.itrip.pojo.ItripHotelFeature">
+    <!--@mbg.generated-->
+    <!--@Table itrip_hotel_feature-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="hotel_Id" jdbcType="BIGINT" property="hotelId" />
+    <result column="feature_Id" jdbcType="BIGINT" property="featureId" />
+    <result column="creation_Date" jdbcType="TIMESTAMP" property="creationDate" />
+    <result column="created_By" jdbcType="BIGINT" property="createdBy" />
+    <result column="modify_Date" jdbcType="TIMESTAMP" property="modifyDate" />
+    <result column="modified_By" jdbcType="BIGINT" property="modifiedBy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, hotel_Id, feature_Id, creation_Date, created_By, modify_Date, modified_By
+  </sql>
+</mapper>
